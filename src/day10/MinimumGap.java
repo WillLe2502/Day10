@@ -34,7 +34,6 @@ public class MinimumGap {
 			}
 		}
 		
-		int a = intList.indexOf(2);
 		return minGap;
 	}
 	
