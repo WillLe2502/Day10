@@ -28,9 +28,7 @@ public class MinimumGap {
 			} else {
 				int firstDupIndex = intToArray.indexOf(Integer.toString(intList.get(i)));
 				int secondDupIndex = intToArray.indexOf(Integer.toString(intList.get(i)), firstDupIndex + 1);
-				
-				int tempMinGap = secondDupIndex - firstDupIndex;
-				minGap = minGap(minGap, tempMinGap);
+				minGap = minGap(minGap, secondDupIndex - firstDupIndex);
 			}
 		}
 		
